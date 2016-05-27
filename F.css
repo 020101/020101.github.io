@@ -1,0 +1,87 @@
+/* common.css */
+
+* {
+	box-sizing:border-box;
+}
+
+body {
+	background:#fafafa;
+	margin:0;
+	font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	color:#555;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content:" ";/* 1 */
+	display:table;/* 2 */
+}
+
+a {
+	text-decoration:none;
+}
+
+.clearfix:after {
+	clear:both;
+}
+
+.clearfix {
+	*zoom:1;
+}
+
+/* welcome.css */
+.banner-page {
+	background: url("./images/junfu.jpg");
+	height:450px;
+	width:450px;
+}
+
+
+.header {
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	background:#00b0b8;
+	height:60px;
+}
+
+.header .logo {
+	display:block;
+	width:60px;
+
+/* 居中 */
+position:fixed;
+left:50%;/*块左边居中*/
+margin-left:-30px;/*整个居中*/
+top:10px;
+
+/* 字体居中 */
+color:#fff;
+font-size:30px;
+line-height:60px;
+text-align:center;
+
+}
+
+.wrapper {
+	width:800px;
+	background:#fff;
+	box-shadow:0 3px 6px rgba(0,0,0,0.6);
+	margin:70px auto;
+	padding:50px;(*)
+}
+
+/* blog */
+.title {
+	font-weight:normal;
+	color:#eb3170;
+	text-align:center;
+	margin:15px 0;(clearfix)
+}
+
+.img {
+	max-width:100%;
+	display:block;
+	margin:30px auto;
+}
